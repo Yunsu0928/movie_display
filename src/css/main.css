@@ -1,0 +1,107 @@
+html,
+body {
+	margin: 0;
+	background-color: #21234b;
+}
+
+header {
+	background-color: #373a69;
+	padding: 5px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.search-form {
+	background-color: transparent;
+	border: 2px solid #21234b;
+	border-radius: 20px;
+	color: white;
+}
+
+.container {
+	padding: 10px;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.contents {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	/* 부모에게(기준) relative 주기!!!  */
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.image {
+	/* background-color: bisque; */
+}
+
+.title-box {
+	background-color: #373a69;
+	height: 40px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin: -5px;
+}
+
+.title {
+	padding-right: 5px;
+	color: white;
+}
+
+.score {
+	background-color: #21234b;
+	padding: 1px;
+	height: 20px;
+	width: 40px;
+	border-radius: 5px;
+	font-size: 12px;
+	text-align: center;
+	/* line-height **두 줄이 아니라면**, div 속성에 맞춰 줄이 맞춰진다. 세로 중앙정렬 때 사용!!!!!!!! */
+	line-height: 20px;
+	color: orange;
+}
+
+.overview-box {
+	background-color: white;
+	padding: 35px 20px;
+	font-size: 12px;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	transition: all 0.3s;
+}
+
+.contents:hover .overview-box {
+	top: 40px;
+	height: 100%;
+}
+
+.btn-top {
+	/* padding: 10px; */
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: #373a69;
+	color: white;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn-top:hover {
+	background-color: white;
+	color: #21234b;
+}
